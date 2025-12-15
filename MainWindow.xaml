@@ -1,0 +1,24 @@
+﻿<Window x:Class="PinballDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Simple Pinball"
+        Width="400"
+        Height="600"
+        KeyDown="Window_KeyDown">
+
+    <Canvas x:Name="GameCanvas"
+            Background="Black">
+
+        <!-- ボール -->
+        <Ellipse x:Name="Ball"
+                 Width="20"
+                Height="20"
+                 Fill="White"/>
+
+        <!-- パドル -->
+        <Rectangle x:Name="Paddle"
+                   Width="100"
+                Height="15"
+                   Fill="Gray"/>
+    </Canvas>
+</Window>
